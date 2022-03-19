@@ -2,17 +2,141 @@
 
 <head>
 
-    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+    <style type="text/css">
 
-    <title>XAMPP DO VINI</title>
+        #fieldset {
+
+            text-align: center;
+            font-size: 20px;
+            border-spacing: 10px;
+            border-color: black;
+            width: 350px;
+            height: 220px;
+            background-color: rgb(245, 245, 245);
+
+        }
+
+        #legendafieldset {
+
+            color: rgb(0, 114, 143);
+
+        }
+
+        #botaologin {
+
+            color: blue;
+            font-size: 15px;
+
+        }
+
+        #botaocancelar {
+
+            color: rgb(255, 49, 49);
+            font-size: 15px;
+
+        }
+
+        #textoformulario {
+
+            text-align: center;
+            font-size: 30px;
+            border-spacing: 10px;
+            border-color: black;
+
+        }
+
+        #tabelalogin {
+
+            align-items: center;
+            margin-top: 25px;
+
+        }
+
+        #imagemlogo {
+
+            align-items: center;
+            width: 350px;
+
+
+        }
+
+        #linkcadastro {
+
+            align-items: center;
+            width: 10px;
+            font-size: 15px;
+
+
+        }
+
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+
+    <title>Login VSystem</title>
 
 </head>
 
-
 <body>
 
+    <form action="processaLogin.php" name="processainformacoeslogin" method="post">
+
+        <br />
+
+        <div align="center">
+
+            <img src="logosenai.png" id="imagemlogo" />
+
+            <h3 id="textoformulario">Login Senai Porto Alegre</h3>
+
+            <fieldset id="fieldset">
+
+                <legend id="legendafieldset">Informe seu usuário e senha:</legend>
+
+                <br />
+
+                <table align="center" id="tabelalogin">
+
+                    <tr>
+                        <td>
+                            Usuário:
+                        </td>
+
+                        <td>
+                            <input type="text" name="nomeUsuario" />
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Senha:
+                        </td>
+
+                        <td>
+                            <input type="password" name="senhaUsuario" />
+                        </td>
+
+                    </tr>
+
+                </table>
+
+                <br />
+
+                <input type="submit" value="Login" id="botaologin" />
+
+                <input type="submit" value="Cancelar" id="botaocancelar" /> <br />
+
+                <br /><a href="cadastro.html" id="linkcadastro">Cadastrar</a>
+
+            </fieldset>
+
+        </div>
+
+    </form>
 
 </body>
-
 
 </html>

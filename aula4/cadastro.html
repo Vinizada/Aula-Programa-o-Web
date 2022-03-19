@@ -1,0 +1,195 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+
+    <style type="text/css">
+
+        #titulopagina {
+
+            font-size: 30px;
+
+
+        }
+
+        #imagemlogo {
+
+            align-items: center;
+            width: 350px;
+
+
+        }
+
+        #tabelaprincipal {
+
+            width: 500px;
+            height: 500px;
+
+
+        }
+
+        #textodadospessoais {
+
+            font-size: 20px;
+        }
+
+        #tabelacomcidadesecursos {
+
+            align-items: center;
+        }
+
+        #linklogin {
+
+            align-items: center;
+            width: 10px;
+            font-size: 15px;
+
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <center id="titulopagina">Cadastro Senai Porto Alegre</center> </br>
+
+    <center><img src="logosenai.png" id="imagemlogo" /></center>
+
+    </br>
+
+    <center>
+
+        <form action="salvaMatricula.php" method="post">
+
+            <table border="5" id="tabelaprincipal">
+
+                <tr>
+                    <TD align="center">
+                        <i><b id="textodadospessoais">Dados Pessoais:</b></i>
+                        </br>
+                        </br>
+                        <table>
+                            <tr>
+                                <td>Nome Completo</td>
+                                <td>
+                                    <input type="text" name="nome_aluno" size=23 />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Data de Nascimento (dd/mm/aaaa)</td>
+                                <td>
+                                    <input type="text" name="dia" size="2" />
+                                    /
+                                    <input type="text" name="mes" size="2" />
+                                    /
+                                    <input type="text" name="ano" size="4" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E-mail</td>
+                                <td>
+                                    <input type="text" name="nome_mae" size=23 />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Senha:</td>
+                                <td>
+                                    <input type="password" name="nome_pai" size=23 />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Confirmar Senha:</td>
+                                <td>
+                                    <input type="password" name="nome_pai" size=23 />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Telefone DDD</td>
+                                <td>
+                                    <select name="DDD">
+                                        <option value="ddd51">51</option>
+                                        <option value="ddd48">48</option>
+                                        <option value="ddd36">36</option>
+                                        <option value="ddd27">27</option>
+                                    </select>
+                                    Tel:
+                                    <input type="text" name="telefone" size="12" />
+                                </td>
+                            </tr>
+                        </table>
+                        </br>
+                    </TD>
+                </tr>
+                <tr>
+                    <TD>
+                        <table cellspacing="3" cellpadding="3" id="tabelacomcidadesecursos">
+                            <tr>
+                                <td>Cidade:</td>
+                                <td> </td>
+                                <td>Selecione o(s) curso(s) de interesse:</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="cidade">
+                                        <option value="cachoeirinha">Cachoeirinha</option>
+                                        <option value="portoalegre">Porto Alegre</option>
+                                        <option value="gravatai">Gravataí</option>
+                                        <option value="canoas">Canoas</option>
+                                        <option value="viamao">Viamão</option>
+                                    </select>
+
+                                </td>
+                                <td> </td>
+                                <td>
+                                    <input type="checkbox" name="   ">Análise e Desenvolvimento de
+                                    Sistemas
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td> </td>
+                                <td>
+                                    <input type="checkbox" name="cursoescolhido">Redes de Computadores
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td> </td>
+                                <td>
+                                    <input type="checkbox" name="cursoescolhido">Ciência de Dados
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td> </td>
+                                <td>
+                                    <input type="checkbox" name="cursoescolhido">Telecomunicações
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td> </td>
+                                <td>
+                                    <input type="checkbox" name="cursoescolhido">Machine Learning
+                                </td>
+                            </tr>
+                        </table>
+                    </TD>
+                </tr>
+            </table>
+            <br>
+
+            <input type="submit" value="Confirmar Cadastro" />
+            <input type="reset" value="Cancelar" /> <br>
+
+            <br /><a href="index.html" id="linklogin">Voltar para o Login</a>
+
+        </form>
+
+    </center>
+
+</body>
+
+</html>
