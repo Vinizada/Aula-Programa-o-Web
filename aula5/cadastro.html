@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+
+<head>
+
+    <style type="text/css">
+        #imagemlogo {
+
+            align-items: center;
+            width: 350px;
+        }
+
+        #titulopagina {
+
+            font-size: 20px;
+            font-family: monospace;
+            color: #fa5f5f;
+
+
+        }
+
+        #fieldset {
+
+            font-size: 20px;
+            border-spacing: 8px;
+            border-color: #fa5f5f;
+            width: 400px;
+            height: 470px;
+            background-color: white;
+
+        }
+
+        #textoDescricao {
+
+            font-size: 15px;
+            font-family: monospace;
+            color: #fa5f5f;
+
+        }
+
+        #inputDescricao {
+
+            font-size: 15px;
+            font-family: monospace;
+            border-color: #6fa9df;
+            text-align: center;
+            border-radius: 20px;
+
+        }
+
+        #tipoSelecao {
+
+            font-size: 15px;
+            font-family: monospace;
+            border-color: #6fa9df;
+            color: #6fa9df;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        #inputConfirmar {
+
+            font-size: 15px;
+            font-family: monospace;
+            border-color: #000000;
+            color: #000000;
+            background-color: #a6d0f8;
+            align-items: center;
+            border-style: outset;
+            border-radius: 20px;
+
+        }
+
+        #inputLimpar {
+
+            font-size: 15px;
+            font-family: monospace;
+            border-color: #000000;
+            color: #000000;
+            background-color: #f89c9c;
+            align-items: center;
+            border-style: outset;
+            border-radius: 20px;
+
+        }
+
+    </style>
+
+    <title>Cadastro De Produtos</title>
+
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+
+</head>
+
+<body background="background.jpg">
+    <center><img src="petshologo.png" id="imagemlogo" /></center>
+
+    <form action="processaItens.php" method="post">
+
+        <center>
+            <fieldset id="fieldset">
+
+                <br/>
+
+                <center id="titulopagina">CADASTRAR NOVO PRODUTO</center> </br>
+
+                <table align="center" id="tabelacadastro" cellspacing="4" cellpadding="4">
+
+                    <tr>
+                        <td>
+                            <center id="textoDescricao">Descrição do Produto</center>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <center><input type="text" name="nomeUsuario" id="inputDescricao" /></center>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <center id="textoDescricao">Tipo do Produto</center>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <center><select name="tipoProduto" id="tipoSelecao">
+                                    <option value="ddd51">Selecione o tipo do produto</option>
+                                    <option value="ddd48">Potes</option>
+                                    <option value="ddd36">Rações</option>
+                                    <option value="ddd27">Brinquedos</option>
+                                    <option value="ddd27">Remédios</option>
+                                    <option value="ddd27">Petiscos</option>
+                                </select></center>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <center id="textoDescricao">Valor do Produto</center>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <center><input type="number" name="valorProduto" id="inputDescricao" step="0.01" min="0.01" /></center>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <center id="textoDescricao">Observações</center>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <center><input type="text" name="obsProduto" id="inputDescricao" /></center>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <center id="textoDescricao">Estado Entrega</center>
+                        </td>
+
+                    </tr>
+
+                </table>
+
+                <table align="center" cellspacing="3" cellpadding="3" id="tabelacomcidadesecursos">
+
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="inputDescricao" name="cursoescolhido"><i id="textoDescricao">RS</i>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" id="inputDescricao" name="cursoescolhido"><i id="textoDescricao">SC</i>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" id="inputDescricao" name="cursoescolhido"><i id="textoDescricao">PR</i>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" id="inputDescricao" name="cursoescolhido"><i id="textoDescricao">SP</i>
+                        </td>
+
+                    </tr>
+
+                </table>
+                <br/>
+
+                <table align="center" cellspacing="3" cellpadding="3" id="tabelacomcidadesecursos">
+
+                    <tr>
+                        <td>      
+                            <input type="submit" id="inputConfirmar" value="Confirmar" />
+                        </td>
+
+                        <td>
+                            <input type="reset"  id="inputLimpar" value="Limpar" /> 
+                          </td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+        </center>
+
+    </form>
+
+</body>
+
+</html>

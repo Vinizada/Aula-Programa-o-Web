@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+
+<head>
+
+    <style type="text/css">
+
+        #imagemlogo {
+
+            align-self: left;
+            width: 100px;
+        }
+
+        #fieldset {
+
+            font-size: 20px;
+            align-self: center;
+            border-spacing: 2px;
+            padding: auto;
+            border-radius: 15px;
+            border-width: 1px;
+            border-color: #000000 opacity: 0.35;
+            width: 400px;
+            height: 470px;
+            background-color: white;
+
+        }
+
+        #inputDescricao {
+
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-color: #000000;
+            opacity: 0.35;
+            border-width: 2px;
+            text-align: left;
+            border-radius: 3px;
+            width: 125px;
+
+        }
+
+        #inputEmail {
+
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-color: #000000;
+            opacity: 0.35;
+            border-width: 2px;
+            text-align: left;
+            border-radius: 3px;
+            width: 263px;
+
+        }
+
+        #inputConfirmar {
+
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+            background-color: #3900e4;
+            align-items: center;
+            border-style: outset;
+            border-radius: 10px;
+
+        }
+
+        #texto {
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: normal;
+            font-size: 25px;
+            font-weight: 30;
+
+
+        }
+
+        #textoemail{
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: normal;
+            align-self: left;
+            font-size: 15px;
+            font-weight: 30;
+
+
+        }
+
+        #textoabaixoemail{
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: normal;
+            font-size: 12px;
+            font-weight: 25;
+
+
+        }
+
+        #textoameuemail{
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: normal;
+            font-size: 18px;
+            color: #0057b9;
+            font-weight: 25;
+
+        }
+        
+    </style>
+
+    <title>Cadastro De Produtos</title>
+
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+
+</head>
+
+<body>
+
+    <form action="emailGoogle.php" method="post">
+
+        <div align="left">
+
+            <fieldset id="fieldset">
+
+                <img src="googlelog.png" id="imagemlogo" />
+
+                <h1 id="texto">Criar a sua Conta do Google</h1>
+
+                <input type="text" aria-label="Nome" id="inputDescricao" placeholder="Nome" />
+
+                <input type="text" aria-label="Nome" id="inputDescricao" placeholder="Sobrenome" />
+
+                <br />
+                <br />
+
+                <input type="text" aria-label="Nome" id="inputEmail" placeholder="Nome de Usuário" /> <span id="textoemail">@gmail.com</span>
+                <br />
+                <span id="textoabaixoemail"> Você pode usar letras, números e pontos finais</span>
+                <br />
+                <br />
+                <span id="textoameuemail"> Usar meu endereço de e-mail ao invés disso</span>
+                <br />
+                <br />
+                <input type="password" aria-label="senha" id="inputDescricao" placeholder="Senha" />
+                <input type="password" aria-label="confirmar" id="inputDescricao" placeholder="Confirmar" /> 
+                <br />
+                <span id="textoabaixoemail"> Use oito ou mais caracteres com uma combinação de letras, números e símbolos</span>
+                <br/>
+                <br/>
+                <input type="checkbox" name="mostrarsenha"><i id="textoemail">Mostrar Senha</i>
+
+                <br />
+                <br />
+                <span id="textoameuemail"> Faça login ao invés disso</span>&nbsp&nbsp&nbsp&nbsp 
+                <input type="submit" id="inputConfirmar" value="Próxima" />
+                
+
+            </fieldset>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
