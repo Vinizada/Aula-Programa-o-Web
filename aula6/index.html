@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript">
+
+        var nome = "Vinícius Lima da Silva";
+        var idade = 18;
+
+        function mostraDados(valorNome, valorIdade){
+
+            alert("Meu nome é " + valorNome + " e eu tenho " + valorIdade + " anos.");
+
+        }
+
+    </script>
+  </head>
+  <body>
+    <header class="nav-container">
+      <nav class="nav-main">
+        <a href="#" class="nav-brand">Dev Full Stack</a>
+        <ul class="menu-items">
+          <li><a href="#portfolio">Portifolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li>
+            <a href="https://github.com/Vinizada" target="_blank">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-profile">
+        <div class="profile-image">
+          <img onclick="mostraDados(nome, idade)" src="images/profile.svg" alt="Imagem Perfil" />
+        </div>
+        <h1 class="profile-title">Vinícius Lima</h1>
+        <p class="profile-description">Full stack - Spring - React</p>
+      </section>
+      <section id="portfolio">
+        <h2 class="portfolio-title">Portifólio</h2>
+        <div class="portfolio-container">
+          <img class="portfolio-item" src="images/profile1.png" alt="profile1" />
+          <img class="portfolio-item" src="images/profile2.png" alt="profile2" />
+          <img class="portfolio-item" src="images/profile3.png" alt="profile3" />
+          <img class="portfolio-item" src="images/profile4.png" alt="profile4" />
+          <img class="portfolio-item" src="images/profile5.png" alt="profile5" />
+          <img class="portfolio-item" src="images/profile6.png" alt="profile6" />
+        </div>
+      </section>
+    </main>
+    <footer id="about">
+      <div class="about-title">Siga-nos</div>
+      <div>
+        <a href="https://www.instagram.com/"
+          ><img class="about-item" src="images/instagram.png" alt="Instagram"
+        /></a>
+        <a  href="https://www.youtube.com/c/CortesdoCasimitoOFICIAL"
+          ><img class="about-item" src="images/youtube.png" alt="Youtube"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

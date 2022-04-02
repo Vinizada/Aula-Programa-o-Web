@@ -1,0 +1,23 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: aqua;
+    border: 10px;
+}
+
+.input {
+    margin: 5px;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    padding: 0%;
+    margin: 3px;
+}
