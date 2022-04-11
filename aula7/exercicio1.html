@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="css/exercicioStyle.css" />
+    <script type="text/javascript" src="script/exercicio1.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Exercícios</h1>
+    </header>
+    <main>
+    <div class="input-container">
+        <h2>Exercício 1</h2>
+    <input class="input" type="submit" value="Mostrar dados do criador"  onclick="mostraDados()"/>
+        <h2>Exercício 2  e 3</h2>
+    <input class="input" type="text" placeholder="Insira qualquer coisa..." id="campoDigitacao"/>
+    <input class="input" type="submit" value="Mostrar alerta"  onclick="mostraDadosDigitados()"/>
+        <h2>Exercício 4</h2>
+        <p>Nome: </p>
+   <input class="input" type="text" placeholder="Insira seu nome" id="nome"/>
+        <p>Idade: </p>
+   <input class="input" type="number" placeholder="Insira sua idade" id="idade"/>
+        <p>RG: </p>
+   <input class="input" type="number" placeholder="Insira seu RG" id="rg"/>
+        <p>Endereço: </p>
+   <input class="input" type="text" placeholder="Insira seu endereço" id="endereco"/>
+   <input class="input" type="submit" value="Cadastrar"  onclick="validaCadastroPessoa()"/>
+
+   <form action="processaProduto.php" method="post" class="input-container">
+       <h2>Exercício 5</h2>
+       <p>Nome do produto: </p>
+    <input class="input" type="text" placeholder="Insira o nome" id="nomeProduto"/>   
+    <p>Preço: </p>
+    <input class="input" type="number" placeholder="Insira o preço" id="precoProduto"/>  
+    <input class="input" type="submit" value="Cadastrar Produto"  onclick="validaCadastroProduto()"/>
+    </form>
+    </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
